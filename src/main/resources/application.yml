@@ -1,0 +1,12 @@
+spring:
+  rabbitmq:
+    host: 172.23.221.75
+    username: guest
+    password: guest
+    listener:
+      retry:
+        enabled: true
+        initial-interval: 2000
+        max-attempts: 2
+        multiplier: 1.5
+        max-interval: 5000
